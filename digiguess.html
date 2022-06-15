@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="./digiguess.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+</script>  
+<script>
+  $(document).ready(function() {
+  $("#big1").addClass("animated shake");
+    });
+    </script>
+    <title>DigiGuess</title>
+  </head>
+  
+  <body>  
+    <center>
+    <div class="range" id="rangeid"><b>DigiGuess</b></div>
+      <div id="top">
+       <!--<button class="retry">Try Again!</button>-->
+       <div id = "trydiv">
+           <p class="try">Attempts left |</p>
+         <p class = "try" id ="try1">5</p>
+     </div>
+        <div id = "modediv">
+          <button class = "modebtn" onclick="easy()" id ="easybtn">Easy</button>
+          <button class = "modebtn" onclick="medium()" id ="mediumbtn"> Medium </button>
+          <button class = "modebtn" onclick="hard()" id="hardbtn">Hard</button>
+        </div>
+      </div>
+      <div id= "extradiv"></div>
+      
+      <div id="bgdiv">
+      <left>
+      <p class= "designdot">••••••••••••••</p>
+      <p class= "designdot">°••••••••••••••°</p>
+      </left>
+      <div class="big" id="big1">
+        <h1 id="guesstxt">Make a Guess</h1>
+        <div id = "inner">
+        <div>
+          <p class="diff">Mode:</p>
+          <div class="diff" id="modee">None</div>
+          <button onclick = "reset()" id = "resetbtn">Reset
+          </button>
+          </div>
+        <section>      
+        <center><div id="alertt">
+        </div></center>
+          <div class="end">
+            <input
+              class="button"
+              id="numberguess"
+              type="number"
+              placeholder="Enter your guess"
+            />
+            <div><button class="button" id="buttonguess" onclick = "guess()">GUESS!</button></div>
+          </div>
+          </div>
+          <div class="other">
+            <button class= "bottombtn" onclick="changetheme()">Switch Theme</p>
+            <button class= "bottombtn" onclick= "helpdirectives()">Help</p>
+               <button class= "bottombtn" id = "btninfo" onclick="gameinfo()"><i class="fas fa-info-circle"></i>info</button>
+          </div>
+        </section>
+      </div>
+      </div>
+    </center>
+ 
+    <script src="digiguess.js"></script>
+  </body>
+</html>

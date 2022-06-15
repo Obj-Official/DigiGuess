@@ -1,0 +1,180 @@
+body {
+  background-color: white/* rgb(44, 44, 44)*/;
+  font-size: large;
+}
+/*.top {
+  display: flex;
+  justify-content: space-between;
+}*/
+.try {
+  padding-right: 5px;
+  display: inline;
+  font-size: 15px;
+  color: white;
+}
+.range {
+  color: white;
+  font-size: 25px;
+  border: 5px  whitesmoke;
+  border-radius: 20px 20px 0px 0px;
+  width: auto;
+  height: 30px;
+  padding: 5px;
+  background-color: indigo;
+  margin-bottom: -5px;
+  font-family: cooperblack;
+}
+#top {
+  background-color: orange;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  height: 20px;
+}
+#extradiv{    
+  height: 20px;
+  background-color: maroon;
+  margin-top: -10px;
+  border-radius: 0px 0px 10px 10px;
+ /* box-shadow: 2px 1px 5px gray;*/
+  display: block;
+  z-index: 1;
+}
+.designdot{
+    color: white;
+    font-size: 40px;
+    opacity: 20%;
+    line-height: 10px;
+    margin-top: -5px;   
+    margin-bottom: -5px;
+}
+#bgdiv{
+  height: auto;
+  background-color: maroon;
+  margin-top: -10px;
+  border-radius: 0px 0px 10px 10px;
+  padding: 20px;
+  width: 80%;
+}
+#trydiv{
+    display: block;
+    float: right;
+    border:  whitesmoke;
+    border-width: 0px 0px 0px 3px;
+    border-radius: 2px;
+    padding: 1px;
+    font-family: courier;
+}
+#modediv{
+    display: block;
+    float: left;
+    padding: 2px;
+}
+.modebtn{
+    border: 2px inset orange;
+    background-color: orange;
+    color: whitesmoke;
+    padding: 2px;
+    font-family: courier;
+}
+#modee {
+  background-color: ;
+  border: 1px inset white;
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+.diff {
+  display: inline;
+  font-size: 11px;
+  color: maroon;
+  font-family: courier;
+}
+#resetbtn{
+  padding: 0px 5px;
+  border-radius: 5px;
+  border-left: 15px inset whitesmoke;
+  background-color: maroon;    
+  font-size: 10px;
+  color: whitesmoke;
+}
+#guesstxt {
+  font-family: cooper;
+  color: whitesmoke;
+  font-size: 20px;
+}
+#buttonguess {
+  border-radius: 10px;
+  border: 0px;
+  font-size: 15px;
+  padding: 2px 10px;
+  height: 40px;
+  background-color: maroon;
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+#numberguess {
+  border-radius: 40px;
+  padding: 4px;
+  margin-bottom: 5px;
+  width: 45%;
+  height: 35px;
+  font-size: 15px;
+}
+.big {
+  font-size: 200%;
+  text-align: center;
+  background-color: indigo;
+  width: 90%;
+  border-radius: 20px;
+  padding: 10px;
+  display: block;
+  margin-top: 30px;
+  /*box-shadow: 2px 1px 5px gray;*/
+}
+#inner{    
+  background-color: orange;
+  padding: 5px;
+  border-radius: 15px;
+}
+#alertt{
+    color: whitesmoke;
+    font-size: 10px;
+    width: 45%;
+    border-radius: 3px;
+    padding: 2px;
+    font-family: verdana;
+    /*border-left: 4px solid white;*/
+}
+.end {
+  text-align: center;
+  padding-top: 5px;
+}
+.button {
+  font-size: 200%;
+}
+.other {
+  padding-top: 2rem;
+  justify-content: space-around;
+  display: flex;
+}
+.bottomtxt{
+    font-size: 10px;
+    color: whitesmoke;
+    }
+.bottombtn{
+  border-radius: 10px;
+  border: 0px;
+  font-size: 12px;
+  padding: 2px 10px;
+  height: 30px;
+  line-height: 30px;
+  background-color: orange;
+  color: whitesmoke;
+}
+/*bugs and additions
+The number of attempt is 6 - reduce
+Game mode should be permanent till reset
+After game won textbox clear on click
+Put an if that will prevent empty textbox
+Add theme
+Reveal answer at game over*/
